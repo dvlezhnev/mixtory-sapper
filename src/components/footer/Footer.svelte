@@ -4,7 +4,7 @@
             <div class="container-links">
                 <a href="about">О проекте</a>
                 <a href=".">Библиотека</a>
-                <a href="#">Правовая информация</a>
+                <a href="legalinformation">Правовая информация</a>
             </div>
             <div class="copyright">
                 © 2019, Mixtory
