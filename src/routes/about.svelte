@@ -6,7 +6,7 @@
 		<div class="content">
 			<div class="block-first">
 				<h1 class="title">О проекте</h1>
-				<h2 class="sub-title">Однажды мы подумали</h2>
+				<h2 class="sub-title" style="margin-top: 16px;">Однажды мы подумали</h2>
 				<div class="questions">
 					<div style="padding: 100px 0">
 						<div class="question question-1">
@@ -112,9 +112,9 @@
 
 	h2{
 		font-style: normal;
-		font-weight: 600;
-		font-size: 32px;
-		line-height: 46px;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 30px;
 		color: #120D24;
 	}
 
