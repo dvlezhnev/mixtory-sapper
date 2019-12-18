@@ -1,6 +1,7 @@
 <script>
 	import LibraryInfoBlock from "../components/mainInfoBlock/LibraryInfoBlock.svelte";
 	import StoryList from "../components/storyList/StoryList.svelte";
+	import {stories} from "./stories/_stories";
 </script>
 <style>
 
@@ -11,4 +12,5 @@
 </svelte:head>
 
 <LibraryInfoBlock/>
-<StoryList/>
+<StoryList title="Выберите историю" stories="{stories}"/>
+<StoryList title="Новинки"/>
