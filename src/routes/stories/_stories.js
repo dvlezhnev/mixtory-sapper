@@ -1,5 +1,6 @@
 export const stories = [
     {
+        slug: "oploshnost",
         title: "Оплошность",
         clauses: [
             "А у вас тут красиво: и речка, полянка, и люди с косами.",
@@ -22,6 +23,7 @@ export const stories = [
         ]
     },
     {
+        slug: "ne-morosi",
         title: "Не мороси",
         adult: true,
         clauses: [
@@ -47,6 +49,7 @@ export const stories = [
         ]
     },
     {
+        slug: "tarakan",
         title: "Таракан",
         clauses: [
             "Люблю, когда он усы закручивает. Он тогда сразу на этого похож... с часами плавленными.",
@@ -69,6 +72,7 @@ export const stories = [
         ]
     },
     {
+        slug: "margarita",
         title: "Маргарита",
         clauses: [
             "Чо ему от меня надо?",
@@ -92,6 +96,7 @@ export const stories = [
         ]
     },
     {
+        slug: "vse-vrut",
         title: "Все врут",
         clauses: [
             "Вот я закрою глаза — и тебя не будет.",
@@ -114,6 +119,7 @@ export const stories = [
         ]
     },
     {
+        slug: "krolik-i-dikobraz",
         title: "Кролик и дикобраз",
         clauses: [
             "Тут главное, не мельтешить ушами — рассыпешь.",
@@ -140,6 +146,7 @@ export const stories = [
         ]
     },
     {
+        slug: "vsyo-bylo",
         title: "Всё было",
         clauses: [
             "Как всегда",
@@ -160,6 +167,7 @@ export const stories = [
         ]
     },
     {
+        slug: "kto-ukral-kaktus",
         title: "Кто украл кактус?",
         clauses: [
             "Одна мысль не давала ему покоя.",
@@ -182,6 +190,7 @@ export const stories = [
         ]
     },
     {
+        slug: "mysh-seraya",
         title: "Мышь серая",
         clauses: [
             "Э, мужчина, куда стакан попёрли? Не заплОчено.",
@@ -205,6 +214,7 @@ export const stories = [
         ]
     },
     {
+        slug: "indyukam-tam-ne-mesto",
         title: "Индюкам там не место",
         clauses: [
             "Знаешь, из чего они суп варят?",

@@ -9,7 +9,7 @@
         <h2>{title}</h2>
         <div class="elements">
             {#each stories as story}
-                <StoryListElement title="{story.title}"/>
+                <StoryListElement story="{story}"/>
             {/each}
         </div>
     </div>

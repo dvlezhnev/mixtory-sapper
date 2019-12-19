@@ -1,12 +1,12 @@
 <script>
-    export let title = "Название истории";
+    export let story;
     export let posterColor = "#" + ("0".repeat(5) + Math.random() * (0xFFFFFF + 1)).slice(-6);
 </script>
 
-<div class="story-container">
+<a class="story-container" href="/stories/{story.slug}">
     <div class="poster" style="background-color: {posterColor};"></div>
-    <div class="title">{title}</div>
-</div>
+    <div class="title">{story.title}</div>
+</a>
 
 <style>
     .story-container{
@@ -19,10 +19,20 @@
         border-radius: 4px;
         margin-top: 48px;
         margin-right: calc(160px / 3);
+        text-decoration: none;
     }
     .story-container:nth-child(4n){
         margin-right: 0;
     }
+
+    .story-container:hover{
+        box-shadow: 4px 4px 10px rgba(2, 13, 50, 0.3);
+    }
+    a.story-container:focus{
+        box-shadow: 4px 4px 10px rgba(2, 13, 50, 0.3);
+        outline: none;
+    }
+
 
     .story-container > .poster{
         background-color: #E8E8E8;
