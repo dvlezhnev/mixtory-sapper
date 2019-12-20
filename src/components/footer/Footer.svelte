@@ -20,7 +20,7 @@
     }
 
     .container{
-        max-width: 1400px;
+        width: 1400px;
         margin: auto;
     }
 
