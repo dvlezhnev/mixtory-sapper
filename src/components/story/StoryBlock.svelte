@@ -1,6 +1,7 @@
 <script>
     import StoryTitle from "./StoryTitle.svelte";
     import StoryClause from "./StoryClause.svelte";
+    import {factorial} from "../../utils/Math";
 
     export let story;
 
@@ -10,6 +11,7 @@
     let currentIndex = -1;
     let clause = "";
     let finished = false;
+    let countVariant = factorial(story.clauses.length).toLocaleString('ru-RU');
 
     function mixClauses() {
         clauses = story.clauses
@@ -37,6 +39,8 @@
     }
 
     function onStartButtonClick() {
+        finished = false;
+        currentIndex = -1;
         mixClauses();
         next();
     }
@@ -50,9 +54,22 @@
             <StoryClause clause="{clause}"/>
         {/if}
         <div class="controls">
+            {#if finished}
+            <div class="info">
+                <span>Вы только что прочитали</span>
+                <span class="big">1</span>
+                <span>из возможных</span>
+                <span class="big">{countVariant}</span>
+                <span>вариантов развития истории</span>
+            </div>
+            <div class="finished-buttons-container">
+                <button on:click={onStartButtonClick}>Перемешать заново</button>
+                <a href=".">Выбрать другую историю →</a>
+            </div>
+            {/if}
             {#if currentIndex === -1}
                 <button on:click={onStartButtonClick}>Перемешать</button>
-            {:else}
+            {:else if finished === false}
                 <button on:click={next}>Следующая →</button>
             {/if}
         </div>
@@ -73,14 +90,64 @@
         padding-top: 68px;
         text-align: center;
     }
-    .controls > button{
-        padding: 24px;
+    .controls  button{
+        padding: 20px;
         font-weight: 600;
         font-size: 16px;
         line-height: 18px;
         color: #FFFFFF;
         background: #22C06B;
         border-radius: 4px;
-        border: none;
+        border: 4px solid #22C06B;
+        cursor: pointer;
+    }
+
+    .controls > .info{
+        /*margin-top: 88px;*/
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .controls > .info > span{
+        font-family: Merriweather, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 19px;
+        color: #120D24;
+    }
+
+    .controls > .info > span.big{
+        font-family: Montserrat, sans-serif;
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 53px;
+        color: #120D24;
+    }
+
+    .controls > .finished-buttons-container{
+        padding-top: 64px;
+        text-align: right;
+    }
+
+    .controls > .finished-buttons-container > button{
+        background-color: #ffffff;
+        color: #120D24;
+    }
+
+    .controls > .finished-buttons-container > a{
+        padding: 20px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFFFFF;
+        background: #22C06B;
+        border-radius: 4px;
+        border: 4px solid #22C06B;
+        cursor: pointer;
+        text-decoration: none;
+        margin-left: 32px;
     }
 </style>

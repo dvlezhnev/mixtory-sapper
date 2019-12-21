@@ -13,4 +13,3 @@
 
 <LibraryInfoBlock/>
 <StoryList title="Выберите историю" stories="{stories}"/>
-<StoryList title="Новинки"/>
