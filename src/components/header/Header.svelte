@@ -4,7 +4,7 @@
 
 <div class="wrap">
     <div class="container">
-        <div class="main-header">
+        <div class="nav">
             <div class="logo"></div>
             <div class="container-links">
                 <a class:selected='{segment === undefined}' href=".">Библиотека</a>
@@ -14,38 +14,37 @@
     </div>
 </div>
 
-<style>
+<style type="text/scss">
+    .wrap{
+        width: 100%;
+    }
+
+    @media screen and (max-width: 575.98px){
+        .container {
+            width: 100%;
+        }
+    }
     .container{
         width: 1400px;
         margin: auto;
     }
 
-    .main-header{
+    .nav{
         display: flex;
         width: 100%;
         height: 80px;
-        padding-left: 32px;
-        padding-right: 32px;
         box-sizing: border-box;
-        align-items: center;
         background: #ffffff;
-    }
+        align-items: center;
+        justify-content: space-between;
 
-    .main-header > *{
-        display: inline-block;
-    }
-
-    .main-header > .logo{
-        width: 172px;
-        height: 42px;
-        background-image: url("/assets/logo.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
-    .main-header > .container-links{
-        flex: 1;
-        text-align: right;
+        & > .logo{
+            width: 172px;
+            height: 42px;
+            background-image: url("/assets/logo.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
     }
 
     a{

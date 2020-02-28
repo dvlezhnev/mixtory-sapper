@@ -38,8 +38,8 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-svelte": "^5.0.1",
     "rollup-plugin-terser": "^4.0.4",
-    "sapper": "^0.27.0",
-    "svelte": "^3.0.0",
+    "sapper": "^0.27.10",
+    "svelte": "^3.12.1",
     "svelte-preprocess": "^3.4.0"
   }
 }
