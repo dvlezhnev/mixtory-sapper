@@ -69,4 +69,10 @@
         color: #252132;
         margin-top: 32px;
     }
+
+    @media (max-width: 500px) {
+        nav{
+            flex-direction: column;
+        }
+    }
 </style>

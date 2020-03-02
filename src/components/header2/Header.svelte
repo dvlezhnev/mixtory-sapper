@@ -61,4 +61,16 @@
         background-size: contain;
         margin: auto 16px;
     }
+
+    @media (max-width: 500px){
+        header{
+            flex-direction: column;
+            height: auto;
+            min-height: 100px;
+
+            & > nav{
+                margin: 24px auto;
+            }
+        }
+    }
 </style>
