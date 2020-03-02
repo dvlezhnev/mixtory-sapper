@@ -140,7 +140,7 @@
 
         @media (max-width: 1024px) {
             & {
-                font-size: 32px;
+                font-size: 28px;
             }
         }
     }
