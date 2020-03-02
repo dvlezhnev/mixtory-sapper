@@ -46,7 +46,7 @@
     }
 </script>
 
-<div class="wrap" style="background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(18,13,36,1) 300px, rgba(255,255,255,1) 300px, rgba(255,255,255,1) 100%);">
+<div class="wrapper" style="background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(18,13,36,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);">
     <div class="container">
         {#if currentIndex === -1}
             <StoryTitle title="{title}"/>
@@ -76,15 +76,21 @@
     </div>
 </div>
 
-<style>
+<style type="text/scss">
     .wrapper{
-
+        width: 100%;
     }
     .container{
         margin: auto;
-        width: 1400px;
+        max-width: 1400px;
         padding: 88px 120px 64px 120px;
         box-sizing: border-box;
+    }
+    
+    @media (max-width: 1024px) {
+        .container{
+            padding: 12px;
+        }
     }
     .controls{
         padding-top: 68px;
