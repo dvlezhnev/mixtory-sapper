@@ -51,20 +51,14 @@
         box-sizing: border-box;
         align-items: center;
         justify-content: space-between;
-
-        & > .logo{
-            width: 172px;
-            height: 42px;
-            background-image: url("/assets/logo.svg");
-            background-repeat: no-repeat;
-            background-size: contain;
-            margin: auto 16px;
-        }
     }
 
-    @media (max-width: 767px) {
-        .container{
-            width: 100%;
-        }
+    .logo{
+        width: 172px;
+        height: 42px;
+        background-image: url("/assets/logo.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: auto 16px;
     }
 </style>

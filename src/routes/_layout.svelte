@@ -1,6 +1,6 @@
 <script>
-	import Footer from "../components/footer/Footer.svelte";
 	import Header2 from "../components/header2/Header.svelte";
+	import Footer2 from "../components/footer2/Footer.svelte";
 
 	export let segment;
 </script>
@@ -9,11 +9,11 @@
 <main class="main-container">
 	<slot/>
 </main>
-<Footer/>
+<Footer2/>
 
 <style>
 	main {
 		box-sizing: border-box;
-		min-height: calc(100vh - 80px - 175px);
+		min-height: calc(100vh - 80px - 123px);
 	}
 </style>

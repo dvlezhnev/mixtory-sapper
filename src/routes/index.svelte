@@ -2,6 +2,7 @@
 	import LibraryInfoBlock from "../components/mainInfoBlock/LibraryInfoBlock.svelte";
 	import StoryList from "../components/storyList/StoryList.svelte";
 	import {stories} from "./stories/_stories";
+	import LandingBlock from "../components/landingBlock/LandingBlock.svelte";
 </script>
 <style>
 
@@ -11,5 +12,5 @@
 	<title>Mixtory - Библиотека</title>
 </svelte:head>
 
-<LibraryInfoBlock/>
+<LandingBlock/>
 <StoryList title="Выберите историю" stories="{stories}"/>
