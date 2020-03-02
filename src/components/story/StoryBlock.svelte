@@ -114,6 +114,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width: 1024px) {
+            & {
+                flex-direction: column;
+            }
+        }
     }
 
     .controls > .info > span{
@@ -131,11 +137,24 @@
         font-size: 38px;
         line-height: 53px;
         color: #120D24;
+
+        @media (max-width: 1024px) {
+            & {
+                font-size: 32px;
+            }
+        }
     }
 
     .controls > .finished-buttons-container{
         padding-top: 64px;
-        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+
+        @media (max-width: 1024px) {
+            & {
+                flex-direction: column;
+            }
+        }
     }
 
     .controls > .finished-buttons-container > button{
@@ -144,6 +163,7 @@
     }
 
     .controls > .finished-buttons-container > a{
+        display: inline-block;
         padding: 20px;
         font-weight: 600;
         font-size: 16px;
@@ -155,5 +175,13 @@
         cursor: pointer;
         text-decoration: none;
         margin-left: 32px;
+
+        @media (max-width: 1024px) {
+            & {
+                flex-direction: column;
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+        }
     }
 </style>
