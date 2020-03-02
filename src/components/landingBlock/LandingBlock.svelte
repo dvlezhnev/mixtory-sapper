@@ -90,7 +90,7 @@
         }
         .info{
             flex-grow: 1;
-            padding: 0 20px;
+            padding: 0 36px;
 
             & > .text{
                 margin-left: 0;
