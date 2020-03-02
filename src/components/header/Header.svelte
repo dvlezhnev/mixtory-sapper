@@ -15,7 +15,7 @@
 </div>
 
 <style type="text/scss">
-    .wrap{
+    .wrapper{
         width: 100%;
     }
 

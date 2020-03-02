@@ -13,7 +13,7 @@
 </div>
 
 <style>
-    .wrap{
+    .wrapper{
         background-color: #FFC700;
         background-image: url("/assets/main_library_text_things.svg");
     }

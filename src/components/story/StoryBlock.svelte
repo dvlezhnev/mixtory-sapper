@@ -77,7 +77,7 @@
 </div>
 
 <style>
-    .wrap{
+    .wrapper{
 
     }
     .container{

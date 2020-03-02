@@ -15,7 +15,7 @@
 
 
 <style type="text/scss">
-    .wrap{
+    .wrapper{
         border-top: 1px solid #CDCAD6;
     }
 
