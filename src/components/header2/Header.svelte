@@ -72,5 +72,14 @@
                 margin: 24px auto;
             }
         }
+
+        .logo{
+            width: 172px;
+            height: 42px;
+            background-image: url("/assets/logo.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: 1rem 0 0 0;
+        }
     }
 </style>
