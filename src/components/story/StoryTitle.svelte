@@ -1,9 +1,10 @@
 <script>
     export let title;
+    export let color = "#DF7E7E";
 </script>
 
 <div class="container">
-    <div class="title">
+    <div class="title" style="background-color: {color}">
         <h1>{title}</h1>
     </div>
 </div>
@@ -23,7 +24,6 @@
         width: 100%;
         text-align: center;
         border: 10px solid transparent;
-        background-color: #DF7E7E;
         box-sizing: border-box;
         position: relative;
         padding: 140px 0;

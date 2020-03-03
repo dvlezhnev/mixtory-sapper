@@ -9,7 +9,7 @@
         <h2>{title}</h2>
         <div class="elements">
             {#each stories as story}
-                <StoryListElement story="{story}"/>
+                <StoryListElement story="{story}" posterColor="{story.backColor}"/>
             {/each}
         </div>
     </div>
