@@ -1,7 +1,7 @@
 <svelte:head>
     <title>Правовая информация</title>
 </svelte:head>
-<div class="wrap">
+<div class="wrapper">
     <div class="container">
         <h1 class="title">Правовая информация</h1>
         <h2 class="sub-title">Условия использования<br>материалов сайта mixtory.ru</h2>
@@ -15,7 +15,7 @@
         </div>
     </div>
 </div>
-<div class="wrap" style="background-color: #E9FFF3;">
+<div class="wrapper" style="background-color: #E9FFF3;">
     <div class="container">
         <div class="info-block">
             <div class="text bold">Для тех, кто никогда не читает условия и соглашения, коротко:</div>
@@ -25,7 +25,11 @@
     </div>
 </div>
 
-<style>
+<style type="text/scss">
+    .wrapper{
+        width: 100%;
+    }
+
     .container{
         max-width: 1400px;
         margin: auto;
@@ -37,6 +41,12 @@
         font-size: 60px;
         line-height: 87px;
         color: #120D24;
+        @media (max-width: 1024px) {
+            &{
+                font-size: 3.6rem;
+                line-height: 4rem;
+            }
+        }
     }
 
     h2{
@@ -45,22 +55,43 @@
         font-size: 32px;
         line-height: 46px;
         color: #120D24;
+        @media (max-width: 1024px) {
+            &{
+                font-size: 2rem;
+                line-height: 2.2rem;
+            }
+        }
     }
 
     .title{
         display: block;
         text-align: center;
         margin-top: 48px;
+        @media (max-width: 1024px) {
+            &{
+                margin-top: 0;
+            }
+        }
     }
 
     .sub-title{
         display: block;
         text-align: center;
         margin-top: 72px;
+        @media (max-width: 1024px) {
+            &{
+                margin-top: 24px;
+            }
+        }
     }
 
     .rules{
         padding: 45px 320px;
+        @media (max-width: 1024px) {
+            &{
+                padding: 16px;
+            }
+        }
     }
 
     .rules > .rule{
@@ -74,6 +105,11 @@
 
     .info-block{
         padding: 96px 320px;
+        @media (max-width: 1024px) {
+            &{
+                padding: 16px;
+            }
+        }
     }
 
     .info-block > .text{
