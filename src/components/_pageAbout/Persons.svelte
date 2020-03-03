@@ -36,6 +36,7 @@
 
     .content{
         max-width: 1400px;
+        padding: 0 16px;
     }
 
     .sub-title{

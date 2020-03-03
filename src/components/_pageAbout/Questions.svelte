@@ -5,7 +5,7 @@
                 <h1 class="title">О проекте</h1>
                 <h2 class="sub-title" style="margin-top: 16px;">Однажды мы подумали</h2>
                 <div class="questions">
-                    <div style="padding: 100px 0">
+                    <div class="row">
                         <div class="question question-1">
                             <div class="icon">😜</div>
                             <div class="text">«А не сочинить ли истории со случайным сюжетом?»</div>
@@ -30,6 +30,10 @@
 </div>
 
 <style type="text/scss">
+    .wrapper{
+        width: 100%;
+    }
+
     .container{
         max-width: 1400px;
         margin: auto;
@@ -48,8 +52,8 @@
 
         @media (max-width: 1024px) {
             &{
-                font-size: 4rem;
-                line-height: 4.2rem;
+                font-size: 3.6rem;
+                line-height: 4rem;
             }
         }
     }
@@ -80,56 +84,83 @@
         margin-top: 72px;
     }
 
-    .info-block{
-        padding: 96px 360px;
-    }
-
-    .info-block > .text{
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 30px;
-        color: #120D24;
-        margin-top: 20px;
-        width: 620px;
-    }
-
-    .info-block > .text.bold{
-        font-weight: 600;
-    }
-
     .questions{
         text-align: center;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .questions > .row
+    {
+        margin-top: 36px;
+        margin-bottom: 36px;
+        @media (min-width: 1180px){
+            &{
+                margin-top: 100px;
+                margin-bottom: 100px;
+            }
+        }
+
     }
 
     .questions  .question{
-        width: 560px;
+        max-width: 560px;
+        width: 100%;
         height: 290px;
         margin: auto;
         text-align: center;
-        padding: 57px 140px;
         box-sizing: border-box;
         background-repeat: no-repeat;
-        display: inline-block;
+        background-size: contain;
+        background-position: center;
+        display: inline-flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+
+        @media (max-width: 500px) {
+            height: auto;
+        }
     }
 
     .questions  .question.question-1{
         background-image: url("/assets/question_1.svg");
-        transform: translateY(-50px);
-        margin-right: 20px;
+        margin-bottom: 36px;
+        @media (min-width: 1180px){
+            &{
+                transform: translateY(-50px);
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+        }
+
+        @media (max-width: 500px) {
+            background-image: none;
+        }
     }
     .questions  .question.question-2{
         background-image: url("/assets/question_2.svg");
-        transform: translateY(50px);
-        margin-left: 20px;
+        @media (min-width: 1180px){
+            transform: translateY(50px);
+            margin-left: 20px;
+        }
+        @media (max-width: 500px) {
+            background-image: none;
+        }
     }
     .questions  .question.question-3{
         background-image: url("/assets/question_3.svg");
-        display: block;
+        @media (max-width: 500px) {
+            background-image: none;
+        }
     }
 
     .questions  .question > .icon{
         font-size: 40px;
         font-weight: 600;
+        @media (max-width: 500px) {
+            font-size: 36px;
+        }
     }
 
     .questions  .question > .text{
@@ -138,6 +169,13 @@
         font-size: 20px;
         line-height: 26px;
         color: #120D24;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        @media (max-width: 500px) {
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
 
     .stickers-block{
@@ -150,12 +188,12 @@
         background-repeat: no-repeat;
         background-size: contain;
         height: 200px;
-        width: 430px;
+        max-width: 430px;
         margin: auto;
     }
 
     .stickers-block > .text{
-        width: 654px;
+        max-width: 686px;
         margin: 32px auto 0 auto;
         font-style: normal;
         font-weight: 500;
@@ -163,47 +201,6 @@
         line-height: 30px;
         text-align: center;
         color: #120D24;
-    }
-
-    .block-last{
-
-    }
-
-    .block-last > .container-persons{
-        display: flex;
-        padding-top: 88px;
-        padding-bottom: 156px;
-    }
-
-    .block-last > .container-persons > .person{
-        flex: 1;
-    }
-
-    .block-last > .container-persons > .person > .avatar{
-        width: 60px;
-        height: 60px;
-        background: #EBEBEB;
-        border-radius: 50%;
-        margin: auto;
-    }
-
-    .block-last > .container-persons > .person > .name{
-        font-style: normal;
-        font-weight: 600;
-        font-size: 17px;
-        line-height: 25px;
-        text-align: center;
-        color: #120D24;
-        margin: 24px 0 0 0;
-    }
-
-    .block-last > .container-persons > .person > .role{
-        font-style: normal;
-        font-weight: 500;
-        font-size: 17px;
-        line-height: 25px;
-        text-align: center;
-        color: #120D24;
-        margin: auto;
+        padding: 0 16px;
     }
 </style>
