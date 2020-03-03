@@ -34,6 +34,9 @@
 </div>
 
 <style type="text/scss">
+    .wrapper{
+        width: 100%;
+    }
     .container{
         max-width: 1400px;
         margin: auto;
@@ -52,8 +55,8 @@
 
         @media (max-width: 1024px) {
             &{
-                font-size: 4rem;
-                line-height: 4.2rem;
+                font-size: 3.6rem;
+                line-height: 4rem;
             }
         }
     }
@@ -82,10 +85,20 @@
         display: block;
         text-align: center;
         margin-top: 72px;
+        @media (max-width: 1024px) {
+            &{
+                margin-top: 24px;
+            }
+        }
     }
 
     .info-block{
         padding: 96px 360px;
+        @media (max-width: 1024px) {
+            &{
+                padding: 16px;
+            }
+        }
     }
 
     .info-block > .text{
@@ -95,119 +108,14 @@
         color: #120D24;
         margin-top: 20px;
         width: 620px;
+        @media (max-width: 1024px) {
+            &{
+                width: auto;
+            }
+        }
     }
 
     .info-block > .text.bold{
         font-weight: 600;
-    }
-
-    .questions{
-        text-align: center;
-    }
-
-    .questions  .question{
-        width: 560px;
-        height: 290px;
-        margin: auto;
-        text-align: center;
-        padding: 57px 140px;
-        box-sizing: border-box;
-        background-repeat: no-repeat;
-        display: inline-block;
-    }
-
-    .questions  .question.question-1{
-        background-image: url("/assets/question_1.svg");
-        transform: translateY(-50px);
-        margin-right: 20px;
-    }
-    .questions  .question.question-2{
-        background-image: url("/assets/question_2.svg");
-        transform: translateY(50px);
-        margin-left: 20px;
-    }
-    .questions  .question.question-3{
-        background-image: url("/assets/question_3.svg");
-        display: block;
-    }
-
-    .questions  .question > .icon{
-        font-size: 40px;
-        font-weight: 600;
-    }
-
-    .questions  .question > .text{
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 26px;
-        color: #120D24;
-    }
-
-    .stickers-block{
-        padding: 104px 0;
-        box-sizing: border-box;
-    }
-
-    .stickers-block > .stickers{
-        background-image: url("/assets/stickers.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 200px;
-        width: 430px;
-        margin: auto;
-    }
-
-    .stickers-block > .text{
-        width: 654px;
-        margin: 32px auto 0 auto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 30px;
-        text-align: center;
-        color: #120D24;
-    }
-
-    .block-last{
-
-    }
-
-    .block-last > .container-persons{
-        display: flex;
-        padding-top: 88px;
-        padding-bottom: 156px;
-    }
-
-    .block-last > .container-persons > .person{
-        flex: 1;
-    }
-
-    .block-last > .container-persons > .person > .avatar{
-        width: 60px;
-        height: 60px;
-        background: #EBEBEB;
-        border-radius: 50%;
-        margin: auto;
-    }
-
-    .block-last > .container-persons > .person > .name{
-        font-style: normal;
-        font-weight: 600;
-        font-size: 17px;
-        line-height: 25px;
-        text-align: center;
-        color: #120D24;
-        margin: 24px 0 0 0;
-    }
-
-    .block-last > .container-persons > .person > .role{
-        font-style: normal;
-        font-weight: 500;
-        font-size: 17px;
-        line-height: 25px;
-        text-align: center;
-        color: #120D24;
-        margin: auto;
     }
 </style>
