@@ -93,10 +93,10 @@
     }
 
     .info-block{
-        padding: 96px 360px;
+        padding: 96px calc(320 / 1400 * 100%);
         @media (max-width: 1024px) {
             &{
-                padding: 16px;
+                padding: 32px 16px;
             }
         }
     }

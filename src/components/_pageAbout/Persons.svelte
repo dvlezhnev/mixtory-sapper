@@ -26,6 +26,9 @@
 </div>
 
 <style type="text/scss">
+    .wrapper{
+        width: 100%;
+    }
     .container{
         max-width: 1400px;
         margin: auto;
@@ -35,144 +38,49 @@
         max-width: 1400px;
     }
 
-    h1{
-        font-style: normal;
-        font-weight: 900;
-        font-size: 60px;
-        line-height: 87px;
-        color: #120D24;
-
-        @media (max-width: 1024px) {
-            &{
-                font-size: 4rem;
-                line-height: 4.2rem;
-            }
-        }
-    }
-
-    h2{
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 30px;
-        color: #120D24;
-    }
-
-    .title{
-        display: block;
-        text-align: center;
-        margin-top: 48px;
-
-        @media (max-width: 1024px) {
-            &{
-                margin-top: 0;
-            }
-        }
-    }
-
     .sub-title{
         display: block;
         text-align: center;
         margin-top: 72px;
-    }
-
-    .info-block{
-        padding: 96px 360px;
-    }
-
-    .info-block > .text{
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 30px;
-        color: #120D24;
-        margin-top: 20px;
-        width: 620px;
-    }
-
-    .info-block > .text.bold{
-        font-weight: 600;
-    }
-
-    .questions{
-        text-align: center;
-    }
-
-    .questions  .question{
-        width: 560px;
-        height: 290px;
-        margin: auto;
-        text-align: center;
-        padding: 57px 140px;
-        box-sizing: border-box;
-        background-repeat: no-repeat;
-        display: inline-block;
-    }
-
-    .questions  .question.question-1{
-        background-image: url("/assets/question_1.svg");
-        transform: translateY(-50px);
-        margin-right: 20px;
-    }
-    .questions  .question.question-2{
-        background-image: url("/assets/question_2.svg");
-        transform: translateY(50px);
-        margin-left: 20px;
-    }
-    .questions  .question.question-3{
-        background-image: url("/assets/question_3.svg");
-        display: block;
-    }
-
-    .questions  .question > .icon{
-        font-size: 40px;
-        font-weight: 600;
-    }
-
-    .questions  .question > .text{
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 26px;
-        color: #120D24;
-    }
-
-    .stickers-block{
-        padding: 104px 0;
-        box-sizing: border-box;
-    }
-
-    .stickers-block > .stickers{
-        background-image: url("/assets/stickers.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 200px;
-        width: 430px;
-        margin: auto;
-    }
-
-    .stickers-block > .text{
-        width: 654px;
-        margin: 32px auto 0 auto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 30px;
-        text-align: center;
-        color: #120D24;
-    }
-
-    .block-last{
-
+        font-size: 32px;
+        line-height: 46px;
+        @media (max-width: 1024px) {
+            &{
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+        @media (max-width: 500px) {
+            &{
+                margin-top: 36px;
+            }
+        }
     }
 
     .block-last > .container-persons{
         display: flex;
         padding-top: 88px;
         padding-bottom: 156px;
+
+        @media (max-width: 500px) {
+            &{
+                flex-direction: column;
+                padding-top: 36px;
+                padding-bottom: 36px;
+            }
+        }
     }
 
     .block-last > .container-persons > .person{
         flex: 1;
+        @media (max-width: 500px) {
+            &{
+                padding-bottom: 14px;
+                &:last-child{
+                    padding-bottom: 0;
+                }
+            }
+        }
     }
 
     .block-last > .container-persons > .person > .avatar{
