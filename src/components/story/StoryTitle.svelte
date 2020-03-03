@@ -1,10 +1,10 @@
 <script>
     export let title;
-    export let color = "#DF7E7E";
+    export let backColor = "#DF7E7E";
 </script>
 
 <div class="container">
-    <div class="title" style="background-color: {color}">
+    <div class="title" style="background-color: {backColor}">
         <h1>{title}</h1>
     </div>
 </div>

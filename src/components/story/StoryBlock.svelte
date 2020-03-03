@@ -6,7 +6,7 @@
     export let story;
 
     let title = story.title;
-    let titleColor = story.backColor;
+    let backColor = story.backColor;
     let clauses = [];
 
     let currentIndex = -1;
@@ -50,7 +50,7 @@
 <div class="wrapper" style="background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(18,13,36,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);">
     <div class="container">
         {#if currentIndex === -1}
-            <StoryTitle title="{title}" color="{titleColor}"/>
+            <StoryTitle title="{title}" {backColor}/>
         {:else}
             <StoryClause clause="{clause}"/>
         {/if}
