@@ -58,6 +58,7 @@
             background-repeat: repeat;
             z-index: 0;
             background-size: contain;
+            background-position-x: -10px;
         }
 
         & > .adult-alert

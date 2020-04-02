@@ -23,5 +23,6 @@
         height: 100%;
         position: relative;
         background-repeat: repeat;
+        background-position-x: -10px;
     }
 </style>
