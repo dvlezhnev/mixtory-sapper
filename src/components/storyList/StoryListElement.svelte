@@ -1,12 +1,17 @@
 <script>
+    import StoryBackdrop from "../story/StoryBackdrop.svelte";
     export let story;
     export let posterColor = "#" + ("0".repeat(5) + Math.random() * (0xFFFFFF + 1)).slice(-6);
 
+    let coverAssetPath = "/assets/covers/";
+
+    let backdropCover = story.cover ? `url("${coverAssetPath + story.cover}")` : "none";
     let href = `/stories/${story.slug}`;
 </script>
 
 <a class="story-container" href="{href}">
     <div class="poster" style="background-color: {posterColor};">
+        <div class="cover" style="background-image: {backdropCover}"></div>
         {#if story.adult === true}
         <div class="adult-alert">
             <div class="age"><span>18+</span></div>
@@ -45,6 +50,15 @@
         width: 100%;
         height: 160px;
         position: relative;
+
+        .cover{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-repeat: repeat;
+            z-index: 0;
+            background-size: contain;
+        }
 
         & > .adult-alert
         {

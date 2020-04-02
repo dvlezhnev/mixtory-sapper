@@ -2,11 +2,13 @@
     import StoryTitle from "./StoryTitle.svelte";
     import StoryClause from "./StoryClause.svelte";
     import {factorial} from "../../utils/Math";
+    import StoryBackgroud from "./StoryBackdrop.svelte";
+    import StoryBackdrop from "./StoryBackdrop.svelte";
 
     export let story;
 
     let title = story.title;
-    let backColor = story.backColor;
+    let titleBackColor = story.titleBackColor;
     let clauses = [];
 
     let currentIndex = -1;
@@ -28,13 +30,11 @@
 
     function next() {
         let nextIndex = currentIndex + 1;
-        if (nextIndex < clauses.length)
-        {
+        if (nextIndex < clauses.length) {
             clause = clauses[nextIndex].clause;
             currentIndex = nextIndex;
         }
-        if (nextIndex === clauses.length - 1)
-        {
+        if (nextIndex === clauses.length - 1) {
             finished = true;
         }
     }
@@ -47,10 +47,11 @@
     }
 </script>
 
-<div class="wrapper" style="background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(18,13,36,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);">
+<div class="wrapper">
+    <StoryBackdrop {story}/>
     <div class="container">
         {#if currentIndex === -1}
-            <StoryTitle title="{title}" {backColor}/>
+            <StoryTitle title="{title}" {titleBackColor}/>
         {:else}
             <StoryClause clause="{clause}"/>
         {/if}
@@ -80,6 +81,7 @@
 <style type="text/scss">
     .wrapper{
         width: 100%;
+        position: relative;
     }
     .container{
         margin: auto;
