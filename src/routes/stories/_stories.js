@@ -107,8 +107,9 @@ export const stories = [
     {
         slug: "vse-vrut",
         title: "Все врут",
-        titleBackColor: "#9AD0C3",
-        backdropColor: "#571414",
+        titleBackColor: "#82C9A7",
+        backdropColor: "#17414A",
+        cover: "vse_vrut.svg",
         clauses: [
             "Вот я закрою глаза — и тебя не будет.",
             "Почкой клянусь. Единственной!",
@@ -159,7 +160,8 @@ export const stories = [
         slug: "vsyo-bylo",
         title: "Всё было",
         titleBackColor: "#9F224F",
-        backdropColor: "#DF7E7E",
+        backdropColor: "#E4C698",
+        cover: "vso_bylo.svg",
         clauses: [
             "Как всегда",
             "Ушёл",
@@ -234,8 +236,9 @@ export const stories = [
     {
         slug: "indyukam-tam-ne-mesto",
         title: "Индюкам там не место",
-        titleBackColor: "#F2BBAA",
-        backdropColor: "#BBB4B9",
+        titleBackColor: "#F4A8A8",
+        backdropColor: "#634396",
+        cover: "indukam.svg",
         clauses: [
             "Знаешь, из чего они суп варят?",
             "Скажут ещё потом, что мы это сами всё придумали.",
@@ -260,8 +263,9 @@ export const stories = [
     {
         slug: "subektivnyj-idealizm",
         title: "Субъективный идеализм",
-        titleBackColor: "#6C8CBC",
-        backdropColor: "#E5DE9F",
+        titleBackColor: "#0024B0",
+        backdropColor: "#A9ACA9",
+        cover: "idealism.svg",
         clauses: [
             "Таково уж его сознание.",
             "Никто даже не догадался, что именно его сознание придумало всю эту чушь.",
