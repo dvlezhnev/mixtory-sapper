@@ -46,50 +46,12 @@
         max-width: 1400px;
     }
 
-    h1{
-        font-style: normal;
-        font-weight: 900;
-        font-size: 60px;
-        line-height: 87px;
-        color: #120D24;
-
-        @media (max-width: 1024px) {
-            &{
-                font-size: 3.6rem;
-                line-height: 4rem;
-            }
-        }
-    }
-
     h2{
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 20px;
         line-height: 30px;
         color: #120D24;
-    }
-
-    .title{
-        display: block;
-        text-align: center;
-        margin-top: 48px;
-
-        @media (max-width: 1024px) {
-            &{
-                margin-top: 0;
-            }
-        }
-    }
-
-    .sub-title{
-        display: block;
-        text-align: center;
-        margin-top: 72px;
-        @media (max-width: 1024px) {
-            &{
-                margin-top: 24px;
-            }
-        }
     }
 
     .info-block{
