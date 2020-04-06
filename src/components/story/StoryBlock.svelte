@@ -49,6 +49,7 @@
 
 <svelte:head>
     <meta name="theme-color" content="{story.backdropColor}">
+    <meta name="apple-mobile-web-app-status-bar-style" content="{story.backdropColor}">
     <meta property="og:locale" content="ru_RU"/>
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="{story.title}"/>
