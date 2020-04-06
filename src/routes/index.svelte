@@ -9,6 +9,8 @@
 
 <svelte:head>
 	<title>Mixtory - Библиотека</title>
+	<meta name='theme-color' content='#120D24'>
+	<meta name="apple-mobile-web-app-status-bar-style" content="#120D24">
 	<meta property="og:locale" content="ru_RU"/>
 	<meta property="og:type" content="article"/>
 	<meta property="og:title" content="Mixtory - случайное случается!"/>
