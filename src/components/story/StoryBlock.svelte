@@ -53,6 +53,8 @@
     <meta property="og:title" content="{story.title}"/>
     <meta property="og:description" content="Делюсь 1 из возможных {countVariant} вариантов развития истории. Замиксуйте свою версию!"/>
     <meta property="og:image" content="https://mixtory.ru/assets/share_covers/{story.shareCover}"/>
+    <meta property="og:image:width" content="500"/>
+    <meta property="og:image:height" content="261"/>
     <meta property="vk:image" content="https://mixtory.ru/assets/share_covers/{story.shareCover}"/>
     <meta property="og:url" content="https://mixtory.ru/stories/{story.slug}"/>
     <meta property="og:site_name" content="Mixtory"/>
