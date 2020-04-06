@@ -14,6 +14,7 @@
 	<meta property="og:title" content="Mixtory - случайное случается!"/>
 	<meta property="og:description" content="Замиксуйте свою версию истории!"/>
 	<meta property="og:image" content="https://mixtory.ru/assets/share_covers/index.jpg"/>
+	<meta property="vk:image" content="https://mixtory.ru/assets/share_covers/index.jpg"/>
 	<meta property="og:url" content="https://mixtory.ru/"/>
 	<meta property="og:site_name" content="Mixtory"/>
 </svelte:head>
