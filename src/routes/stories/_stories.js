@@ -5,6 +5,7 @@ export const stories = [
         titleBackColor: "#BF929A",
         backdropColor: "#A3767E",
         cover: "oploshnost.svg",
+        shareCover: "oploshnost.jpg",
         clauses: [
             "А у вас тут красиво: и речка, и полянка, и люди с косами.",
             "Вы водку любите? Давайте за ваше здоровье!",
@@ -57,6 +58,7 @@ export const stories = [
         titleBackColor: "#63A6AE",
         backdropColor: "#2B5073",
         cover: "tarakan.svg",
+        shareCover: "tarakan.jpg",
         clauses: [
             "Люблю, когда он усы закручивает. Он тогда сразу на этого похож... с часами плавлеными.",
             "Он, когда нервничает, всегда к свету тянется.",
@@ -83,6 +85,7 @@ export const stories = [
         titleBackColor: "#DF7E7E",
         backdropColor: "#120D24",
         cover: "margarita.svg",
+        shareCover: "margarita.jpg",
         clauses: [
             "Что ему от меня надо?",
             "Красная клякса медленно расплывалась по асфальту.",
@@ -110,6 +113,7 @@ export const stories = [
         titleBackColor: "#82C9A7",
         backdropColor: "#17414A",
         cover: "vse_vrut.svg",
+        shareCover: "vse_vrut.jpg",
         clauses: [
             "Вот я закрою глаза — и тебя не будет.",
             "Почкой клянусь. Единственной!",
@@ -136,6 +140,7 @@ export const stories = [
         titleBackColor: "#FF8660",
         backdropColor: "#5C5F86",
         cover: "krolik.svg",
+        shareCover: "krolik.jpg",
         clauses: [
             "Тут главное — не мельтешить ушами —рассыпешь.",
             "Идёшь, бывало, мимо кладовки, а оттуда дикобраз выглядывает.",
@@ -162,6 +167,7 @@ export const stories = [
         titleBackColor: "#9F224F",
         backdropColor: "#E4C698",
         cover: "vso_bylo.svg",
+        shareCover: "vso_bylo.jpg",
         clauses: [
             "Как всегда",
             "Ушёл",
@@ -186,6 +192,7 @@ export const stories = [
         titleBackColor: "#7CA6BE",
         backdropColor: "#EAD8D3",
         cover: "kaktus.svg",
+        shareCover: "cactus.jpg",
         clauses: [
             "Одна мысль не давала ему покоя.",
             "Следы ведут к кроличьей норе.",
@@ -212,6 +219,7 @@ export const stories = [
         titleBackColor: "#43674D",
         backdropColor: "#67AD87",
         cover: "mysh_seraya.svg",
+        shareCover: "mysh_seraya.jpg",
         clauses: [
             "Э, мужчина, куда стакан попёрли? Не заплОчено.",
             "Следующий!",
@@ -239,6 +247,7 @@ export const stories = [
         titleBackColor: "#F4A8A8",
         backdropColor: "#634396",
         cover: "indukam.svg",
+        shareCover: "indukam.jpg",
         clauses: [
             "Знаешь, из чего они суп варят?",
             "Скажут ещё потом, что мы это сами всё придумали.",
@@ -266,6 +275,7 @@ export const stories = [
         titleBackColor: "#0024B0",
         backdropColor: "#A9ACA9",
         cover: "idealism.svg",
+        shareCover: "idealism.jpg",
         clauses: [
             "Таково уж его сознание.",
             "Никто даже не догадался, что именно его сознание придумало всю эту чушь.",

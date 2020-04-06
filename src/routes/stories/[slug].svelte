@@ -15,4 +15,9 @@
     export let story;
 </script>
 
+<svelte:head>
+    <title>Mixtory - {story.title}</title>
+
+</svelte:head>
+
 <StoryBlock story="{story}"/>

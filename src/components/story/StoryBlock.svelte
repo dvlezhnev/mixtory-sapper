@@ -47,6 +47,15 @@
     }
 </script>
 
+<svelte:head>
+    <meta property="og:locale" content="ru_RU"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="{story.title}"/>
+    <meta property="og:description" content="Делюсь 1 из возможных {countVariant} вариантов развития истории. Замиксуйте свою версию!"/>
+    <meta property="og:image" content="https://mixtory.ru/assets/share_covers/{story.shareCover}"/>
+    <meta property="og:url" content="https://mixtory.ru/stories/{story.slug}"/>
+    <meta property="og:site_name" content="Mixtory"/>
+</svelte:head>
 <div class="wrapper">
     <StoryBackdrop {story}/>
     <div class="container">
