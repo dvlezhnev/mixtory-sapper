@@ -14,7 +14,8 @@
 	<meta property="og:locale" content="ru_RU"/>
 	<meta property="og:type" content="article"/>
 	<meta property="og:title" content="Mixtory - случайное случается!"/>
-	<meta property="og:description" content="Замиксуйте свою версию истории!"/>
+	<meta property="og:description" content="Целая история, как ни крути."/>
+	<meta name="description" content="Целая история, как ни крути."/>
 	<meta property="og:image" content="https://mixtory.ru/assets/share_covers/mixtory.jpg"/>
 	<meta property="og:image:width" content="751"/>
 	<meta property="og:image:height" content="392"/>
