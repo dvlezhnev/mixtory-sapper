@@ -53,7 +53,7 @@
     <meta property="og:locale" content="ru_RU"/>
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="{story.title}"/>
-    <meta property="description" content="Делюсь 1 из возможных {countVariant} вариантов развития истории. Замиксуйте свою версию!"/>
+    <meta name="description" content="Делюсь 1 из возможных {countVariant} вариантов развития истории. Замиксуйте свою версию!"/>
     <meta property="og:description" content="Делюсь 1 из возможных {countVariant} вариантов развития истории. Замиксуйте свою версию!"/>
     <meta property="og:image" content="https://mixtory.ru/assets/share_covers/{story.shareCover}"/>
     <meta property="og:image:width" content="751"/>
