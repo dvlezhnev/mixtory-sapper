@@ -62,6 +62,7 @@
     <meta property="og:url" content="https://mixtory.ru/stories/{story.slug}"/>
     <meta property="og:site_name" content="Mixtory"/>
 </svelte:head>
+
 <div class="wrapper">
     <StoryBackdrop {story}/>
     <div class="container">
