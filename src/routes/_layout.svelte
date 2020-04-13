@@ -1,19 +1,18 @@
 <script>
-	import Header2 from "../components/header2/Header.svelte";
-	import Footer2 from "../components/footer2/Footer.svelte";
+	import Footer from "../components/footer3/Footer.svelte";
+	import Header from "../components/header3/Header.svelte";
 
 	export let segment;
 </script>
 
-<Header2 {segment}/>
+<Header {segment}/>
 <main class="main-container">
 	<slot/>
 </main>
-<Footer2/>
+<Footer/>
 
 <style>
 	main {
-		box-sizing: border-box;
-		min-height: calc(100vh - 80px - 123px);
+		flex-grow: 1;
 	}
 </style>
