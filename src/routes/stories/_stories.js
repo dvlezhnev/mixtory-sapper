@@ -2,8 +2,8 @@ export const stories = [
     {
         slug: "plan",
         title: "План",
-        titleBackColor: "#91C086",
-        backdropColor: "#AFD4A6",
+        titleBackColor: "#D043C2",
+        backdropColor: "#F4B9FF",
         cover: "plan.svg",
         shareCover: "plan.jpg",
         clauses: [
