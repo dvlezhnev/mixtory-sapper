@@ -5,17 +5,17 @@
                 <h2 class="sub-title">Чуть не забыли уточнить, мы — это:</h2>
                 <div class="container-persons">
                     <div class="person">
-                        <div class="avatar"></div>
+                        <div class="avatar elena"></div>
                         <div class="name">Елена Лопатина</div>
                         <div class="role">пишу истории</div>
                     </div>
                     <div class="person">
-                        <div class="avatar"></div>
+                        <div class="avatar denis"></div>
                         <div class="name">Денис Лежнев</div>
                         <div class="role">программирую истории</div>
                     </div>
                     <div class="person">
-                        <div class="avatar"></div>
+                        <div class="avatar ekaterina"></div>
                         <div class="name">Екатерина Зырянова</div>
                         <div class="role">рисую истории</div>
                     </div>
@@ -87,9 +87,21 @@
     .block-last > .container-persons > .person > .avatar{
         width: 60px;
         height: 60px;
-        background: #EBEBEB;
+        background-color: #EBEBEB;
         border-radius: 50%;
         margin: auto;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .avatar.elena{
+        background-image: url("/assets/photo/lena.png");
+    }
+    .avatar.denis{
+        background-image: url("/assets/photo/denis.png");
+    }
+    .avatar.ekaterina{
+        background-image: url("/assets/photo/ekaterina.png");
     }
 
     .block-last > .container-persons > .person > .name{
