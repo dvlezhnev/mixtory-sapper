@@ -4,6 +4,7 @@
     import {factorial} from "../../utils/Math";
     import StoryBackgroud from "./StoryBackdrop.svelte";
     import StoryBackdrop from "./StoryBackdrop.svelte";
+    import StoryFinishBlock from "./StoryFinishBlock.svelte";
 
     export let story;
 
@@ -45,6 +46,18 @@
         mixClauses();
         next();
     }
+
+    function onShare() {
+        if (navigator.share) {
+            navigator.share({
+                title: story.title,
+                text: `Делюсь 1 из возможных ${countVariant} вариантов развития истории. Замиксуйте свою версию!`,
+                url: `https://mixtory.ru/assets/share_covers/${story.shareCover}`
+            })
+                    .then(() => console.log('Successful share'))
+                    .catch((error) => console.log('Error sharing', error));
+        }
+    }
 </script>
 
 <svelte:head>
@@ -73,17 +86,7 @@
         {/if}
         <div class="controls">
             {#if finished}
-            <div class="info">
-                <span>Вы только что прочитали</span>
-                <span class="big">1</span>
-                <span>из возможных</span>
-                <span class="big">{countVariant}</span>
-                <span>вариантов развития истории</span>
-            </div>
-            <div class="finished-buttons-container">
-                <button on:click={onStartButtonClick}>Перемешать заново</button>
-                <a href=".">Выбрать другую историю →</a>
-            </div>
+            <StoryFinishBlock {countVariant} on:remix={onStartButtonClick} on:share={onShare}/>
             {/if}
             {#if currentIndex === -1}
                 <button on:click={onStartButtonClick}>Перемешать</button>
@@ -125,82 +128,5 @@
         border-radius: 4px;
         border: 4px solid #22C06B;
         cursor: pointer;
-    }
-
-    .controls > .info{
-        /*margin-top: 88px;*/
-        box-sizing: border-box;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        @media (max-width: 1024px) {
-            & {
-                flex-direction: column;
-            }
-        }
-    }
-
-    .controls > .info > span{
-        font-family: Merriweather, sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 19px;
-        color: #120D24;
-    }
-
-    .controls > .info > span.big{
-        font-family: Montserrat, sans-serif;
-        font-weight: 500;
-        font-size: 38px;
-        line-height: 53px;
-        color: #120D24;
-
-        @media (max-width: 1024px) {
-            & {
-                font-size: 28px;
-            }
-        }
-    }
-
-    .controls > .finished-buttons-container{
-        padding-top: 64px;
-        display: flex;
-        justify-content: flex-end;
-
-        @media (max-width: 1024px) {
-            & {
-                flex-direction: column;
-            }
-        }
-    }
-
-    .controls > .finished-buttons-container > button{
-        background-color: #ffffff;
-        color: #120D24;
-    }
-
-    .controls > .finished-buttons-container > a{
-        display: inline-block;
-        padding: 20px;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 18px;
-        color: #FFFFFF;
-        background: #22C06B;
-        border-radius: 4px;
-        border: 4px solid #22C06B;
-        cursor: pointer;
-        text-decoration: none;
-        margin-left: 32px;
-
-        @media (max-width: 1024px) {
-            & {
-                flex-direction: column;
-                margin-left: 0;
-                margin-top: 1rem;
-            }
-        }
     }
 </style>

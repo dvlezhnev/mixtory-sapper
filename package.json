@@ -18,7 +18,7 @@
   "dependencies": {
     "@rollup/plugin-json": "^4.0.0",
     "compression": "^1.7.1",
-    "now-sapper": "^0.37.0",
+    "now-sapper": "^0.37.1",
     "polka": "next",
     "sirv": "^0.4.0"
   },
