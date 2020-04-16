@@ -52,7 +52,7 @@
             navigator.share({
                 title: story.title,
                 text: `Делюсь 1 из возможных ${countVariant} вариантов развития истории. Замиксуйте свою версию!`,
-                url: `https://mixtory.ru/assets/share_covers/${story.shareCover}`
+                url: `https://mixtory.ru/stories/${story.slug}`
             })
                     .then(() => console.log('Successful share'))
                     .catch((error) => console.log('Error sharing', error));
