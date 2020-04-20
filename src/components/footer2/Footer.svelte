@@ -16,6 +16,11 @@
             selected: undefined,
             link: ".",
             text: "Библиотека"
+        },
+        {
+            selected: undefined,
+            link: "mailto:hello@mixtory.ru",
+            text: "hello@mixtory.ru"
         }
     ];
 </script>
