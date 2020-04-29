@@ -2,22 +2,22 @@
     <div class="container">
         <div class="content">
             <div class="block-last">
-                <h2 class="sub-title">Чуть не забыли уточнить, мы — это:</h2>
+                <h2 class="sub-title">Кто всё это делает?</h2>
                 <div class="container-persons">
                     <div class="person">
                         <div class="avatar elena"></div>
                         <div class="name">Елена Лопатина</div>
-                        <div class="role">пишу истории</div>
+                        <div class="role">пишет истории</div>
                     </div>
                     <div class="person">
                         <div class="avatar denis"></div>
                         <div class="name">Денис Лежнев</div>
-                        <div class="role">программирую истории</div>
+                        <div class="role">программирует истории</div>
                     </div>
                     <div class="person">
                         <div class="avatar ekaterina"></div>
                         <div class="name">Екатерина Зырянова</div>
-                        <div class="role">рисую истории</div>
+                        <div class="role">рисует истории</div>
                     </div>
                 </div>
             </div>

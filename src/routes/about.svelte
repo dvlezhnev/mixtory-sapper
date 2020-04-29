@@ -5,7 +5,9 @@
 </script>
 
 <svelte:head>
-	<title>О проекте</title>
+	<title>Что такое Mixtory?</title>
+	<meta name="description" content="Микстори – сайт с историями на карточках, которые можно мешать в случайном порядке. У каждой истории от 87 миллиардов до 6 квадриллионов комбинаций."/>
+	<meta name="keywords" content="микстори, сайт с историями, история на карточках"/>
 </svelte:head>
 
 <Questions/>
