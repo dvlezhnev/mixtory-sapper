@@ -36,7 +36,7 @@
     h1{
         font-style: normal;
         font-weight: 800;
-        font-size: 44px;
+        font-size: 36px;
         line-height: 57px;
         color: #FFFFFF;
     }
