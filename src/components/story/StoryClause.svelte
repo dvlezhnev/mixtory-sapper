@@ -26,8 +26,8 @@
         background-color: #FFFFFF;
         box-sizing: border-box;
         position: relative;
-        padding: 140px 30px;
-        height: 360px;
+        /*padding: 140px 30px;*/
+        min-height: 360px;
         display: flex;
         justify-content: center;
         align-items: center;
