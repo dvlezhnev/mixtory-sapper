@@ -1,14 +1,20 @@
 <script>
     export let clause = "";
+    export let asHtml = false;
+    console.log(clause);
 </script>
 
 <div class="container">
     <div class="clause">
-        <h2>{clause}</h2>
+        {#if asHtml}
+            <h2>{@html clause}</h2>
+        {:else}
+            <h2>{clause}</h2>
+        {/if}
     </div>
 </div>
 
-<style>
+<style type="text/scss">
     .container{
         width: 100%;
         height: 100%;
@@ -40,5 +46,9 @@
         font-size: 30px;
         line-height: 42px;
         color: #120D24;
+        @media (max-width: 768px) {
+            font-size: 22px;
+            line-height: 30px;
+        }
     }
 </style>

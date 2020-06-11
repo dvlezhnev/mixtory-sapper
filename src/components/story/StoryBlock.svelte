@@ -13,7 +13,10 @@
     let clauses = [];
 
     let currentIndex = -1;
+
     let clause = "";
+    let clauseAsHtml = false;
+
     let finished = false;
     let countVariant = factorial(story.clauses.length).toLocaleString('ru-RU');
 
@@ -32,7 +35,15 @@
     function next() {
         let nextIndex = currentIndex + 1;
         if (nextIndex < clauses.length) {
-            clause = clauses[nextIndex].clause;
+            if (typeof clauses[nextIndex].clause === "string")
+            {
+                clause = clauses[nextIndex].clause;
+                clauseAsHtml = false;
+            }
+            else {
+                clause = clauses[nextIndex].clause.clause;
+                clauseAsHtml = true;
+            }
             currentIndex = nextIndex;
         }
         if (nextIndex === clauses.length - 1) {
@@ -82,7 +93,7 @@
         {#if currentIndex === -1}
             <StoryTitle title="{title}" {titleBackColor}/>
         {:else}
-            <StoryClause clause="{clause}"/>
+            <StoryClause clause="{clause}" asHtml="{clauseAsHtml}"/>
         {/if}
         <div class="controls">
             {#if finished}
