@@ -1,6 +1,6 @@
 export const stories = [
     {
-        slug: "kolkhoz",
+        slug: "one_day",
         title: "Один день Дениса Ивановича",
         titleBackColor: "#AFA927",
         backdropColor: "#C7DAE8",
